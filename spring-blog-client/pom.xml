@@ -49,7 +49,7 @@
               <goal>copy-resources</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.build.directory}/classes/static</outputDirectory>
+              <outputDirectory>${project.build.directory}/classes/public</outputDirectory>
               <resources>
                 <resource>
                   <directory>${basedir}/dist/spring-blog-client</directory>

@@ -1,0 +1,18 @@
+<h2>New post</h2>
+
+<p>
+  Author:<br/>
+  <input type="text" [(ngModel)]="author"/>
+</p>
+<p>
+  Title:<br/>
+  <input type="text" [(ngModel)]="title"/>
+</p>
+<p>
+  Content:<br/>
+  <textarea rows="10" cols="40" [(ngModel)]="content"></textarea>
+</p>
+<p>
+  <button (click)="onCreateClick()">Create</button>
+</p>
+<p *ngIf="invalid">Invalid post.</p>
