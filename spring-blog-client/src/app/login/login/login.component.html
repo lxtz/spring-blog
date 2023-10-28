@@ -1,0 +1,18 @@
+<h2>Login</h2>
+
+<div *ngIf="!logout">
+<p>
+  Username:<br/>
+  <input type="text" [(ngModel)]="username"/>
+</p>
+<p>
+  Password:<br/>
+  <input type="password" [(ngModel)]="password"/>
+</p>
+<p>
+  <button (click)="onLoginClick()">Login</button>
+</p>
+<p *ngIf="error">Failed to log in.</p>
+</div>
+
+<p *ngIf="logout">Successfully logged out.</p>

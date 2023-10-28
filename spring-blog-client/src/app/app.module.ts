@@ -8,13 +8,15 @@ import {OverviewComponent} from './post/overview/overview.component';
 import {DetailComponent} from './post/detail/detail.component';
 import { CreateComponent } from './post/create/create.component';
 import {FormsModule} from "@angular/forms";
+import { LoginComponent } from './login/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OverviewComponent,
     DetailComponent,
-    CreateComponent
+    CreateComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
